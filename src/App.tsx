@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Root from "./pages/Root"
 import HomePage from "./pages/home/HomePage";
-import SearchPage from "./pages/SearchPage";
-import DetailsPage from "./pages/DetailsPage";
+import SearchPage from "./pages/search/SearchPage";
+import DetailsPage from "./pages/details/DetailsPage";
 import { homeloader } from "./pages/home/homeLoader";
+import { searchLoader } from "./pages/search/searchLoader";
 
 //set up browser router
 const router = createBrowserRouter([
@@ -19,23 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <SearchPage />,
-        //web fetch api request
-        loader: async ({ request }) => {
-          console.log(request)
-          //create new instance of this url from request object
-          const { searchParams } = new URL(request.url);
-          //pull term out of url!
-          const term = searchParams.get('term');
-          console.log(term);
-
-          if(!term){
-            throw new Error('Search term muse be provided!')
-          }
-
-          const res = await fetch(`https://punkapi.online/v3/beers?page=1&?per_page=10&beer_name=${term}`)
-          const data = await res.json();
-          console.log(data)
-        }
+        loader: searchLoader
       },
       {
         path: "/details/:name",
@@ -43,9 +28,7 @@ const router = createBrowserRouter([
       },
     ]
   }
-])
-
-
+]);
 
 function App() {
   return <RouterProvider router={router} />
