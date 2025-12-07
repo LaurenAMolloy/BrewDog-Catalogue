@@ -1,17 +1,22 @@
 import type { HomeLoaderResult } from "./homeLoader";
 import { useLoaderData } from "react-router";
+import { Link } from 'react-router'
 
 export default function HomePage() {
   const { featuredBrews } = useLoaderData() as HomeLoaderResult;
   console.log(featuredBrews)
 
   const renderedBrews = featuredBrews.map((b) => {
-    return <div key={b.name} className="flex flex-col justify-between gap-3 border rounded shadow p-4">
-        <div className="flex flex-col gap-1 border-bottom border-grey-400">
+    return <div key={b.name} className="flex flex-col justify-between gap-3 rounded shadow p-4  bg-gray-200">
+        <div className="flex flex-col justify-evenly gap-1">
           <div className="font-bold text-center">{b.name}</div>
+          <div>
+            <img></img>
+          </div>
           <div className="text-sm text-gray-500">{b.tagline}</div>
-          <div className="text-sm font-bold text-gray-700">{b.abv}% ABV</div>
+          <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded">{b.abv}% ABV</div>
         </div>
+        <Link to={`/details/${b.name}`} className="border rounded bg-black text-center text-white">View Details</Link>
     </div>
   })
   return (
