@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className="text-sm text-gray-500">{b.tagline}</div>
           <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded">{b.abv}% ABV</div>
         </div>
-        <Link to={`/details/${b.name}`} className="border rounded bg-black text-center text-white">View Details</Link>
+        <Link to={`/details/${b.id}`} className="border rounded bg-black text-center text-white">View Details</Link>
     </div>
   })
   return (
