@@ -13,7 +13,7 @@ export default function BrewCardItem({ brew } : BrewListItemProps) {
       <div className="text-2xl font-bold">{brew.name}</div>
         <div className="flex flex-row justify-between">
           <div className="text-slate-400">{brew.tagline}</div>
-          <button>View</button>
+          <Link to={`/details/:${brew.id}`}>View Details</Link>
         </div>
     </div>
   )

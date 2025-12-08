@@ -24,13 +24,14 @@ export interface DetailsLoaderResult {
 
 export default async function detailsLoader({ params } : LoaderArgs): Promise<DetailsLoaderResult> {
 
-    const { name } = params;
+    const idString = params.id;
+    const id = Number(idString);
 
-    if(!name) {
+    if(!idString) {
         throw new Error('Name must be provided')
     }
 
-    const details = await getBrew(name);
+    const details = await getBrew(id);
 
   return {
     details
