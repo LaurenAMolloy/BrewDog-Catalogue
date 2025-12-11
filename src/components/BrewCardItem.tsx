@@ -1,6 +1,6 @@
 //import brew summary
 import type { BrewSummary } from "../api/types/brewSummary"
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 interface BrewListItemProps {
   brew: BrewSummary
@@ -13,7 +13,7 @@ export default function BrewCardItem({ brew } : BrewListItemProps) {
       <div className="text-2xl font-bold">{brew.name}</div>
         <div className="flex flex-row justify-between">
           <div className="text-slate-400">{brew.tagline}</div>
-          <Link to={`/details/:${brew.id}`}>View Details</Link>
+          <Link to={`/details/${brew.id}`}>View Details</Link>
         </div>
     </div>
   )

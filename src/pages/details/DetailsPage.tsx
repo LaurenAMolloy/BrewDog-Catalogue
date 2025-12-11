@@ -6,24 +6,29 @@ export default function DetailsPage() {
   const { details } = useLoaderData() as DetailsLoaderResult
   console.log(details);
 
-   const food_pairing = details.food_pairing.map((food, idx) => {
-    return <div key={idx} className="bg-slate-300 py-1 px-2 rounded">{food}</div>
+   const foodPairing = details.food_pairing.map((food, idx) => {
+    return <div key={idx} className="bg-slate-300 align-center py-1 px-1 place-content-center rounded text-center">{food}</div>
    })
 
   return (
-    <div className="flex flex-col gap-2 border-2 border-slate-200 bg-slate-100 py-3 px-3 mt-4 rounded">
-      <div className="font-bold">{details.name}</div>
-      <div>{details.tagline}</div>
-      <div className="flex justify-center mt-2">
-      <img style ={{ width: 100, height: 300 }} src={`https://punkapi-alxiw.amvera.io/v3/images/${details.image}`}></img>
+    <div className="flex flex-col md:flex-row gap-2 border-2 border-slate-200 bg-slate-100 py-3 px-3 mt-4 rounded shadow-lg">
+      <div className="w-full md:w-1/2">
+        <div className="font-bold">{details.name}</div>
+        <div>{details.tagline}</div>
+        <div className="flex justify-center mt-2">
+        <img style ={{ width: 50, height: 200 }} src={`https://punkapi-alxiw.amvera.io/v3/images/${details.image}`}></img>
+        </div>
+        <div className="pt-3">{details.description}</div>
       </div>
-      <div>{details.description}</div>
-      <div>
-        <h4 className="font-bold">Food Pairing</h4>
-        <div className="flex gap-2 mt-2">
-          {food_pairing}
+
+      <div className="w-full md:w-2/5 md:pl-3">
+          <div>
+            <h4 className="font-bold pb-3">Food Pairing</h4>
+            <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4">
+              {foodPairing}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   )
 }

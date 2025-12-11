@@ -11,7 +11,7 @@ export async function searchLoader({ request } : {request : Request}): Promise<S
     const { searchParams } = new URL(request.url);
     //pull term out of url!
     const term = searchParams.get('term');
-    //console.log(term);
+    console.log(term);
 
     if(!term){
         throw new Error('Search term muse be provided!')

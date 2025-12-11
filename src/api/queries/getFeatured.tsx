@@ -1,7 +1,7 @@
 import type { BrewDetails } from "../types/brewDetails"
 
 const FEATUREDBREW = [
-    11,
+    1,
     12,
     13,
     14
@@ -11,7 +11,7 @@ export async function getFeatured(){
     //mapover featured
     //retrieve details for 4 different 
     const promises = FEATUREDBREW.map(async (id) => {
-        const res = await fetch(`https://punkapi.online/v3/beers/${id}`);
+        const res = await fetch(`https://punkapi-alxiw.amvera.io/v3/beers/${id}`);
 
         if(!res.ok) throw new Error(`Failed to fetch brew ${id}`)
 

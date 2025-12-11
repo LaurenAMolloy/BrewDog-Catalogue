@@ -7,3 +7,5 @@ export interface BrewDetails {
     abv: number,
     food_pairing: string[]
 }
+
+
