@@ -13,7 +13,7 @@ export default function HomePage() {
           <div className="text-sm text-gray-500">{b.tagline}</div>
           <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded mt-auto">{b.abv}% ABV</div>
         </div>
-        <Link to={`/details/${b.id}`} className="border rounded bg-black text-center text-white">View Details</Link>
+        <Link to={`/details/${b.id}`} className="border rounded bg-slate-900 text-center text-white hover:bg-sky-200 hover:text-slate-900 ">View Details</Link>
     </article>
   })
   return (

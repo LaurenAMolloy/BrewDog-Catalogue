@@ -14,13 +14,14 @@ export default function SearchInput() {
     }
 
   return (
-    <div>
+    <div className="pb-2">
         <form onSubmit={handleSubmit}>
             <input
-            placeholder="Search for brews"
+            placeholder="Search for brews..."
             name="term"
             value={term}
-            onChange={(e) => setTerm(e.target.value)}>
+            onChange={(e) => setTerm(e.target.value)}
+            className="border-2 border-slate-300 rounded p-1">
             </input>
         </form>
     </div>
