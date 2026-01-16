@@ -1,5 +1,5 @@
 # 🌟 BrewDog Catalogue  
-This is a React-based beer search app powered by the Punk API. It allows users to search beers by name and view a brief summary of each result. I built this to practice API integration, routing, and component-driven UI design.
+This is a React-based beer discovery app powered by the Punk API. It enables users to search for beers by name, explore featured selections, and view concise details for each beer. The project was built to practice API integration, client-side routing, and component-driven UI development.
 
 ## ✨ Features  
 - Users can search for a beer  
@@ -15,17 +15,46 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 
 ## 📸 Screenshots  
 
-Home Page: <br>
-<img src="./src/assets/homePage.png" alt="Alt text" width="500"><br>
 
-Search Page: <br>
-<img src="./src/assets/searchPage.png" alt="Alt text" width="500"><br>
+### Home Page
 
-Details Page: <br>
-<img src="./src/assets/detailsPage.png" alt="Alt text" width="500"><br>
+<p align="center">
+  <img src="src/assets/homepage.png" width="400" />
+</p>
+
+<br />
+
+### Search Page
+
+<p align="center">
+  <img src="src/assets/searchpage.png" width="400" />
+</p>
+
+<br />
+
+### Details Page
+
+<p align="center">
+  <img src="src/assets/detailsPage.png" width="400" />
+</p>
 
 ## 🧪 Tests
-No automated tests yet. These are planned for a future update.
+
+https://github.com/user-attachments/assets/4b90ab19-6ff4-4e13-8361-f993ed1fcc40
+
+<br />
+
+The testing stack includes:
+
+Vitest or Jest for unit testing
+
+React Testing Library for component and UI testing
+
+Basic automated tests have been implemented for key page: Home Page 
+
+Verifies that featured beers render correctly
+
+Ensures core UI elements load as expected
 
 ## 📚 API / Data Source
 This project uses the Punk API: https://punkapi.com/
@@ -55,20 +84,15 @@ Structuring TypeScript types to match API response
 
 I learnt how to implement promise.all to make sure that all requests settle together
 
-
+How to mock a loader from React Router in a testign environment
 
 https://github.com/user-attachments/assets/85d5497a-9830-4aae-afda-8078e665ffef
 
 
-
 🚀 Future Improvements
 
-I need to add some improvements to the styles
+I could extract link into a resusable component
 
-I need to make this responsive
-
-I need to add some tests
-
-I could a filtering or sorting system for the beers based on their abv or name
+I could a filtering or sorting system for the beers based on the abv or name
 
 
