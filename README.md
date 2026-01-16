@@ -1,5 +1,5 @@
 # 🌟 BrewDog Catalogue  
-This is a React-based beer search app powered by the Punk API. It allows users to search beers by name and view a brief summary of each result. I built this to practice API integration, routing, and component-driven UI design.
+This is a React-based beer discovery app powered by the Punk API. It enables users to search for beers by name, explore featured selections, and view concise details for each beer. The project was built to practice API integration, client-side routing, and component-driven UI development.
 
 ## ✨ Features  
 - Users can search for a beer  
