@@ -12,7 +12,7 @@ vi.mock('react-router', async () => {
     const actual = await vi.importActual<typeof import('react-router')>('react-router')
     return{
         ...actual,
-        //overriding useLoaderData
+        //overriding hook
         useLoaderData: () => ({
             featuredBrews: [
                 {
@@ -24,7 +24,8 @@ vi.mock('react-router', async () => {
                 {
                     id: 2,
                     name: 'Storm',
-                    tagline: 'Post Modern classic'
+                    tagline: 'Post Modern classic',
+                    abv: 6,
                 }
             ]
         })

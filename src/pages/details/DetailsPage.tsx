@@ -32,14 +32,13 @@ export default function DetailsPage() {
         <div className="pt-3">{details.description}</div>
       </div>
 
-      <div className="w-full md:w-2/5 md:pl-3  border-slate-200 border-2 p-4 rounded-2xl shadow ">
-          <div>
+      <div className="flex flex-col items-center w-full md:w-2/5 md:pl-3  border-slate-200 border-2 p-4 rounded-2xl shadow ">
             <h4 className="font-bold pb-3 text-center">Food Pairing</h4>
-            <div className="grid grid-flow-col grid-rows-4 gap-5 ">
+            <div className="flex flex-wrap gap-3 justify-center w-4/5 items-center">
               {foodPairing}
             </div>
           </div>
-        </div>
+        
       </div>
   )
 }
