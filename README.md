@@ -19,7 +19,7 @@ This is a React-based beer discovery app powered by the Punk API. It enables use
 ### Home Page
 
 <p align="center">
-  <img src="src/assets/homepage.png" width="500" />
+  <img src="src/assets/homepage.png" width="400" />
 </p>
 
 <br />
@@ -27,7 +27,7 @@ This is a React-based beer discovery app powered by the Punk API. It enables use
 ### Search Page
 
 <p align="center">
-  <img src="src/assets/searchpage.png" width="500" />
+  <img src="src/assets/searchpage.png" width="400" />
 </p>
 
 <br />
@@ -35,7 +35,7 @@ This is a React-based beer discovery app powered by the Punk API. It enables use
 ### Details Page
 
 <p align="center">
-  <img src="src/assets/detailsPage.png" width="500" />
+  <img src="src/assets/detailsPage.png" width="400" />
 </p>
 
 ## 🧪 Tests
@@ -50,7 +50,7 @@ Vitest or Jest for unit testing
 
 React Testing Library for component and UI testing
 
-Basic automated tests have been implemented for key pages: Home Page and DetailsPage
+Basic automated tests have been implemented for key page: Home Page 
 
 Verifies that featured beers render correctly
 
