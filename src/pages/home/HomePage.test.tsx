@@ -41,7 +41,9 @@ test('loader provides two featured brews', ()=> {
 
     //How can we get these elements
     const cards = screen.getAllByRole('article');
+    const links = screen.getAllByRole('link')
     
     //Assertions
     expect(cards).toHaveLength(2);
+    expect(links).toHaveLength(2);
 });
