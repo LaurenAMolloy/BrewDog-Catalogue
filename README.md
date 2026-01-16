@@ -16,16 +16,29 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 ## 📸 Screenshots  
 
 Home Page: <br>
-<img src="./src/assets/homePage.png" alt="Alt text" width="500"><br>
+<img src="./src/assets/homepage.png" alt="Alt text" width="500"><br>
 
 Search Page: <br>
-<img src="./src/assets/searchPage.png" alt="Alt text" width="500"><br>
+<img src="./src/assets/searchpage.png" alt="Alt text" width="500"><br>
 
 Details Page: <br>
 <img src="./src/assets/detailsPage.png" alt="Alt text" width="500"><br>
 
 ## 🧪 Tests
-No automated tests yet. These are planned for a future update.
+
+The testing stack includes:
+
+Vitest or Jest for unit testing
+
+React Testing Library for component and UI testing
+
+Basic automated tests have been implemented for key pages:
+
+Home Page and DetailsPage
+
+Verifies that featured beers render correctly
+
+Ensures core UI elements load as expected
 
 ## 📚 API / Data Source
 This project uses the Punk API: https://punkapi.com/
