@@ -15,21 +15,11 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 
 ## 📸 Screenshots  
 
-<img
-  src="https://raw.githubusercontent.com/USERNAME/REPO/main/src/assets/homePage.png"
-  width="500"
-/>
-
-
 Home Page: <br>
-<img <img
-  src="https://raw.githubusercontent.com/LaurenAMolloy/BrewDog-Catalogue/main/src/assets/homePage.png"
-  width="500"
-/> alt="Alt text" width="500"><br>
+<img src="./src/assets/homePage.png" alt="Alt text" width="500"><br>
 
 Search Page: <br>
-<img src="https://raw.githubusercontent.com/LaurenAMolloy/BrewDog-Catalogue/main/src/assets/searchPage.png"
-  width="500" alt="Alt text" width="500"><br>
+<img src="./src/assets/searchPage.png" alt="Alt text" width="500"><br>
 
 Details Page: <br>
 <img src="./src/assets/detailsPage.png" alt="Alt text" width="500"><br>
