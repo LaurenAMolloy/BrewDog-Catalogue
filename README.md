@@ -15,14 +15,19 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 
 ## 📸 Screenshots  
 
-Home Page: <br>
-<img src="./src/assets/homepage.png" alt="Alt text" width="500"><br>
+Home Page: <br/>
+<img src="./src/assets/homepage.png" alt="Alt text" width="500">
 
-Search Page: <br>
-<img src="./src/assets/searchpage.png" alt="Alt text" width="500"><br>
+<br /><br />
 
-Details Page: <br>
-<img src="./src/assets/detailsPage.png" alt="Alt text" width="500"><br>
+Search Page: <br/>
+<img src="./src/assets/searchpage.png" alt="Alt text" width="500"> 
+<br /><br />
+
+Details Page: <br/>
+<img src="./src/assets/detailsPage.png" alt="Alt text" width="500">
+
+<br /><br />
 
 ## 🧪 Tests
 
@@ -68,20 +73,15 @@ Structuring TypeScript types to match API response
 
 I learnt how to implement promise.all to make sure that all requests settle together
 
-
+How to mock a loader from React Router in a testign environment
 
 https://github.com/user-attachments/assets/85d5497a-9830-4aae-afda-8078e665ffef
 
 
-
 🚀 Future Improvements
 
-I need to add some improvements to the styles
+I could extract link into a resusable component
 
-I need to make this responsive
-
-I need to add some tests
-
-I could a filtering or sorting system for the beers based on their abv or name
+I could a filtering or sorting system for the beers based on the abv or name
 
 
