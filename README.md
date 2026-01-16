@@ -16,10 +16,10 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 ## 📸 Screenshots  
 
 Home Page: <br>
-<img src="./src/assets/homepage.png" alt="Alt text" width="500"><br>
+<img src="./src/assets/homePage.png" alt="Alt text" width="500"><br>
 
 Search Page: <br>
-<img src="./src/assets/searchpage.png" alt="Alt text" width="500"><br>
+<img src="./src/assets/searchPage.png" alt="Alt text" width="500"><br>
 
 Details Page: <br>
 <img src="./src/assets/detailsPage.png" alt="Alt text" width="500"><br>
