@@ -15,7 +15,6 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 
 ## 📸 Screenshots  
 
-## 📸 Screenshots
 
 ### Home Page
 
@@ -40,6 +39,10 @@ This is a React-based beer search app powered by the Punk API. It allows users t
 </p>
 
 ## 🧪 Tests
+
+https://github.com/user-attachments/assets/4b90ab19-6ff4-4e13-8361-f993ed1fcc40
+
+<br />
 
 The testing stack includes:
 
