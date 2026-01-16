@@ -7,14 +7,14 @@ export default function HomePage() {
   console.log(featuredBrews)
 
   const renderedBrews = featuredBrews.map((b) => {
-    return <div key={b.name} className="flex flex-col justify-between gap-2 rounded shadow p-4 bg-gray-200">
+    return <article key={b.name} className="flex flex-col justify-between gap-2 rounded shadow p-4 bg-gray-200">
         <div className="flex items-stretch flex-col justify-evenly gap-1 h-full">
           <div className="font-bold text-center">{b.name}</div>
           <div className="text-sm text-gray-500">{b.tagline}</div>
           <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded mt-auto">{b.abv}% ABV</div>
         </div>
         <Link to={`/details/${b.id}`} className="border rounded bg-black text-center text-white">View Details</Link>
-    </div>
+    </article>
   })
   return (
   <>
