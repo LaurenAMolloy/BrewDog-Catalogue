@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded mt-auto">{b.abv}% ABV</div>
         </div>
         <div className="flex justify-center">
-        <Link to={`/details/${b.id}`} className="p-2 w-1/2 rounded bg-cyan-900 text-center text-white hover:bg-sky-200 hover:text-slate-900">View Details</Link>
+        <Link to={`/details/${b.id}`} className="p-2 w-full rounded bg-cyan-900 text-center text-white hover:bg-sky-200 hover:text-slate-900">View Details</Link>
         </div>
     </article>
   })

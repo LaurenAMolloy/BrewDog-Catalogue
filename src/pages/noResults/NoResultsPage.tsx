@@ -13,3 +13,5 @@ export default function NoResultsPage({ term }: NoResultsPageProps) {
     </div>
   )
 }
+
+
