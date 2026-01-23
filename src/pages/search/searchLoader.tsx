@@ -4,7 +4,7 @@ import { redirect } from "react-router";
 
 export interface SearchLoaderResult {
     searchResults: BrewSummary[]
-    term: String,
+    term: string,
 }
 
 export async function searchLoader({ request } : {request : Request}): Promise<SearchLoaderResult> {

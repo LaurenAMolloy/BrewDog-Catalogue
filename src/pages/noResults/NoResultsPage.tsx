@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 interface NoResultsPageProps {
-    term:string
+    term: string
 }
 
 export default function NoResultsPage({ term }: NoResultsPageProps) {

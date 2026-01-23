@@ -9,7 +9,7 @@ export default function SearchPage() {
   const { searchResults, term } = useLoaderData() as SearchLoaderResult;
   console.log(searchResults);
 
-  if(searchResults.length === 0) {
+  if(searchResults.length === 0 && term) {
     return <NoResultsPage term={term} />
 }
 
