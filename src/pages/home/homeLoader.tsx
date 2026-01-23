@@ -8,7 +8,7 @@ export interface HomeLoaderResult {
 }
 
 export async function homeloader(): Promise<HomeLoaderResult> {
-    const featuredBrews = await getFeatured();;
+    const featuredBrews = await getFeatured();
 
     return {
         featuredBrews,

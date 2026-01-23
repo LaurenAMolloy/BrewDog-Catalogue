@@ -1,8 +1,10 @@
 import type { BrewSummary } from "../../api/types/brewSummary";
 import { searchBrews } from "../../api/queries/searchBrews";
+import { redirect } from "react-router";
 
 export interface SearchLoaderResult {
     searchResults: BrewSummary[]
+    term: String,
 }
 
 export async function searchLoader({ request } : {request : Request}): Promise<SearchLoaderResult> {
@@ -14,14 +16,18 @@ export async function searchLoader({ request } : {request : Request}): Promise<S
     console.log(term);
 
     if(!term){
-        throw new Error('Search term muse be provided!')
+        //throw new Error('Search term muse be provided!')
+        throw redirect('/')   
     }
+
 
     const results = await searchBrews(term)
     console.log(results)
+
         
     return {
-        searchResults: results
+        searchResults: results,
+        term
     }      
 }
 

@@ -7,13 +7,15 @@ export default function HomePage() {
   console.log(featuredBrews)
 
   const renderedBrews = featuredBrews.map((b) => {
-    return <article key={b.name} className="flex flex-col justify-between gap-2 rounded shadow p-4 bg-gray-200">
+    return <article key={b.name} className="flex flex-col justify-between gap-3 rounded shadow p-5 bg-gray-200">
         <div className="flex items-stretch flex-col justify-evenly gap-1 h-full">
           <div className="font-bold text-center">{b.name}</div>
           <div className="text-sm text-gray-500">{b.tagline}</div>
           <div className="text-sm font-bold text-gray-700 bg-white py-1 px-1 rounded mt-auto">{b.abv}% ABV</div>
         </div>
-        <Link to={`/details/${b.id}`} className="rounded bg-slate-900 text-center text-white hover:bg-sky-200 hover:text-slate-900 ">View Details</Link>
+        <div className="flex justify-center">
+        <Link to={`/details/${b.id}`} className="p-2 w-1/2 rounded bg-cyan-900 text-center text-white hover:bg-sky-200 hover:text-slate-900">View Details</Link>
+        </div>
     </article>
   })
   return (

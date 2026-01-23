@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router";
 import type { DetailsLoaderResult } from './detailsLoader';
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 
 export default function DetailsPage() {
@@ -14,7 +15,7 @@ export default function DetailsPage() {
    })
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 border-2 border-slate-200 bg-slate-100 py-3 px-3 mt-4 rounded shadow-lg">
+    <div className="flex flex-col items-center md:flex-row gap-6 py-3 px-3 mt-4">
       <div className="w-full md:w-1/2 border-slate-200 border-2 p-4 rounded-2xl shadow">
         <div className="font-bold">{details.name}</div>
         <div>{details.tagline}</div>
@@ -32,13 +33,13 @@ export default function DetailsPage() {
         <div className="pt-3">{details.description}</div>
       </div>
 
-      <div className="flex flex-col items-center w-full md:w-2/5 md:pl-3  border-slate-200 border-2 p-4 rounded-2xl shadow ">
+      <div className="flex flex-col items-center w-full md:w-2/5 md:pl-3  border-slate-200 border-2 p-4 rounded-2xl shadow">
             <h4 className="font-bold pb-3 text-center">Food Pairing</h4>
             <div className="flex flex-wrap gap-3 justify-center w-4/5 items-center">
               {foodPairing}
             </div>
-          </div>
-        
+      </div>
+        <Link to="/" className="p-3 w-2/3 rounded-full bg-cyan-900 text-center text-white hover:bg-sky-200 hover:text-slate-900">Try Another Search</Link>
       </div>
   )
 }
