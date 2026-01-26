@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 export default function Root() {
   return (
     <div className="min-h-screen flex flex-col">
-    <div className='container mx-auto px-20 pb-10 grow'>
+    <div className='container mx-auto px-10 pb-10 grow'>
         <Header />
         <Outlet />
     </div>
