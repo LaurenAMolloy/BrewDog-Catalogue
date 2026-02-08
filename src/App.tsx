@@ -12,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    hydrateFallbackElement: <div>Loading...</div>,
     children: [
       {
         index: true,

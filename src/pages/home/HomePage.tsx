@@ -19,12 +19,16 @@ export default function HomePage() {
     </article>
   })
   return (
-  <>
-    <div className="container py-12 space-y-8">
-    <h1 className='text-4xl font-bold'>The BrewDog Catalogue</h1>
-    <p>Search and view your favourite brews.</p>
+    <>
+    <div className="mx-auto max-w-[900px] px-4 py-12 space-y-8">
+      <div className="space-y-2">
+        <h1 className="text-4xl font-bold">The BrewDog Catalogue</h1>
+        <p className="text-slate-600">Search and view your favourite brews.</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {renderedBrews}
+      </div>
     </div>
-    <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[900px] items-stretch gap-4">{renderedBrews}</div>
   </>
   )
 }

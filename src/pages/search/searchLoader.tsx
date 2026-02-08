@@ -16,7 +16,7 @@ export async function searchLoader({ request } : {request : Request}): Promise<S
     console.log(term);
 
     if(!term){
-        //throw new Error('Search term muse be provided!')
+        //throw new Error('Search term must be provided!')
         throw redirect('/')   
     }
 
